@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://d2d3qesrx8xj6s.cloudfront.net/siframe/mvlVn -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex">
+
+    <title>Bootstrap Line Tabs with tab justification - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min(1).css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    /***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+/* Tabs panel */
+.tabbable-panel {
+  border:1px solid #eee;
+  padding: 10px;
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #f3565d;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}
+
+/* Below tabs mode */
+
+.tabbable-line.tabs-below > .nav-tabs > li {
+  border-top: 4px solid transparent;
+}
+.tabbable-line.tabs-below > .nav-tabs > li > a {
+  margin-top: 0;
+}
+.tabbable-line.tabs-below > .nav-tabs > li:hover {
+  border-bottom: 0;
+  border-top: 4px solid #fbcdcf;
+}
+.tabbable-line.tabs-below > .nav-tabs > li.active {
+  margin-bottom: -2px;
+  border-bottom: 0;
+  border-top: 4px solid #f3565d;
+}
+.tabbable-line.tabs-below > .tab-content {
+  margin-top: -10px;
+  border-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+html {
+transform-origin: 0px 0px 0px;
+-webkit-transform-origin: 0px 0px 0px;
+-moz-transform-origin: 0px 0px 0px;
+-o-transform-origin: 0px 0px 0px;
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+-o-transform: scale(0.5);
+}
+    </style>
+    <script src="./jquery-1.10.2.min.js"></script>
+    <script src="./bootstrap.min(2).js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+	<!--
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+
+<div class="container">
+    <div class="row">
+		<div class="col-md-12">
+			
+
+			<div class="tabbable-panel">
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs nav-justified">
+						<li class="active">
+							<a href="http://d2d3qesrx8xj6s.cloudfront.net/siframe/mvlVn#tab_default_1" data-toggle="tab">
+						 HNA</a>
+						</li>
+						<li>
+							<a href="http://d2d3qesrx8xj6s.cloudfront.net/siframe/mvlVn#tab_default_2" data-toggle="tab">
+							SCD </a>
+						</li>
+						
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab_default_1">
+	
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Lineup</th>
+                        <th>AB</th>
+                        <th>R</th>
+                        <th>H</th>
+                        <th>RBI</th>
+                        <th>BB</th>
+                        <th>K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brandon Caldwell</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>James Baker</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Jon Smith</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Anderson Cooper</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Lex Robin</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Jason Michael</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Ronald Jeter</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Nick Molina</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Nathan Rymes</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    
+        
+    
+						</div>
+						<div class="tab-pane" id="tab_default_2">
+							<table border="1">
+                <thead>
+                    <tr>
+                        <th>Lineup</th>
+                        <th>AB</th>
+                        <th>R</th>
+                        <th>H</th>
+                        <th>RBI</th>
+                        <th>BB</th>
+                        <th>K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kevin Cali</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Sheldon Daquioag</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Jordon Esposo</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Tyler Finley</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Graham Fisher</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Garcia</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Matt Kuhl</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Danny Ordonez</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Christian Santos</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		
+						</div>
+					</div>
+					
+			</div>
+		
+	
+
+<br>
+<br>
+
+<br>
+<br>
+	<script type="text/javascript">
+	
+	</script>
+
+
+</body></html>
